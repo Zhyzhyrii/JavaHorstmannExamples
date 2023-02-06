@@ -38,12 +38,6 @@ public class Employee implements Cloneable {//Cloneable - it is markable interfa
     public static class CloneTest {
 
         public static void main(String[] args) throws CloneNotSupportedException {
-    //        Object obj = new Object();
-    //        obj.clone() is missing
-
-    //         Employee employee = new Employee();
-    //         employee.clone() is missing if Employee does not implement Cloneable(Markable) interface
-
             var original = new Employee("John", 5000);
             Employee copy = original.clone();
         }
