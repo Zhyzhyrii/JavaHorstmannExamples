@@ -32,7 +32,7 @@ public class WildCardsTest {
             if (max.getBonus() < a[i].getBonus()) max = a[i];
         }
 //        var f = result.getSecond();//f has type Object
-//        if Pair<? extends Employee> result the f has Employee type
+//        if parametr is Pair<? extends Employee> result then the f has Employee type
         result.setFirst(min); //if parameter Pair<? extends Employee> result - compilation error (type)
         result.setSecond(max);
     }
