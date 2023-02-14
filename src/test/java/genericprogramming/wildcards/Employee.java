@@ -1,9 +1,9 @@
-package clone;
+package genericprogramming.wildcards;
 
 import java.util.Date;
 import java.util.GregorianCalendar;
 
-public class Employee implements Cloneable {//Cloneable - it is markable interface, clone() is inherited from Object
+public class Employee {
     private String name;
     private double salary;
     private Date hireDay;
@@ -12,13 +12,6 @@ public class Employee implements Cloneable {//Cloneable - it is markable interfa
         this.name = name;
         this.salary = salary;
         hireDay = new Date();
-    }
-
-    //need to override with public access modifier
-    public Employee clone() throws CloneNotSupportedException {
-        Employee cloned = (Employee) super.clone(); //protected native Object clone()
-        cloned.hireDay = (Date) hireDay.clone();
-        return cloned;
     }
 
     public void setHireDay(int year, int month, int day) {
