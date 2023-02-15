@@ -1,9 +1,5 @@
 package genericprogramming.wildcards;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-
 public class WildCardTest2 {
     public static void main(String[] args) {
         var ceo = new Manager("Gus Greedy", 10);

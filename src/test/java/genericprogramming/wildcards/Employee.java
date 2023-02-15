@@ -14,6 +14,10 @@ public class Employee {
         hireDay = new Date();
     }
 
+    public double getSalary() {
+        return salary;
+    }
+
     public void setHireDay(int year, int month, int day) {
         Date newHireDay = new GregorianCalendar(year, month - 1, day).getTime();
         hireDay.setTime(newHireDay.getTime());
