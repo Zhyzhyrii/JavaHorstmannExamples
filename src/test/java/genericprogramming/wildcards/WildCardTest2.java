@@ -71,8 +71,5 @@ public class WildCardTest2 {
         var employeeTwoObject = wildcards.getSecond();//possible Object
         var employeeTwoEmployee = (Employee) wildcards.getSecond();//possible Employee
 //        var employeeTwoManager = (Manager) wildcards.getSecond();//impossible, ClassCastException
-
-        System.out.println(obj);
-
     }
 }
