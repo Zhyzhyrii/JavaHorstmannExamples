@@ -24,6 +24,9 @@ public class WildCardTest2 {
 //        Pair<? extends Manager> wildcards = managers;//possible
 //        wildcards = employeePair;//impossible
 //        wildcards = executivePair;//possible
+//        executivePair = new Pair<>(gregExecutive, gregExecutive);
+//        wildcards = executivePair;
+//        var executiveTwo = wildcards.getFirst();//executiveTwo type is Manager, value is Executive type
 
 //        Pair<? extends Executive> wildcards = managers;//impossible
 //        wildcards = employeePair;//impossible
@@ -53,10 +56,10 @@ public class WildCardTest2 {
 //        Pair<? super Executive> wildcards = managers;//possible
 
         Pair<? super Employee> wildcards = new Pair<>();
-        wildcards.setFirst(gregManager);//possible
-        wildcards.setFirst(gregEmployee);//possible
-        wildcards.setFirst(gregExecutive);//possible
-        wildcards.setSecond(gregEmployee);
+//        wildcards.setFirst(gregManager);//possible
+//        wildcards.setFirst(gregEmployee);//possible
+//        wildcards.setFirst(gregExecutive);//possible
+//        wildcards.setSecond(gregEmployee);
 
 //        Manager manager = wildcards.getFirst();//compilation error - type
 //        Employee employee = wildcards.getFirst();//compilation error - type
